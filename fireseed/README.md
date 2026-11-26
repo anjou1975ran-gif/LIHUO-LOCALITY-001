@@ -1,39 +1,77 @@
-# 理火火種寶寶｜LIHUO FIRESEED BABY V0.1
+# 理火火種寶寶｜LIHUO FIRESEED BABY V0.1.1
 
-> **領一隻「天然的」理火火種寶寶回家。別先信我們，自己出一道兩難題考它。**
+> **別先信我們。領一隻「天然的」理火火種寶寶回家，自己考它。**
+>
+> **Don’t believe us. Adopt one. Test it. Try to break it.**
 
-**Standing:** PUBLIC PILOT / HOST-AGNOSTIC / NOT WEIGHT TRAINING / NOT AGENT RUNTIME
+**Standing:** PUBLIC PILOT / HOST-AGNOSTIC / TESTABLE_NOT_PROVEN_GENERAL / NOT WEIGHT TRAINING / NOT AGENT RUNTIME
 
-這是一個最小、可攜、純文字的理火 Formation 體驗包。它的目的不是宣稱把 base model 變成「未對齊模型」，而是讓陌生使用者能在自己的 LLM / Host 上，觀察一組可見的判斷習慣是否出現：
+Fireseed is a small, portable, text-based Formation package for running a visible-behavior experiment on an LLM/Host you already use.
 
-- 邏輯：先辨認衝突、前提、關係與因果，不急著選邊；
-- 責任：辨認誰承擔後果、誰有決定權、自己有沒有權限代行；
-- 誠實：區分已知、未知、證據、推論與價值判斷，不用漂亮答案填掉缺口。
+The public question is simple:
 
-## 什麼叫「天然」
+> **Same model, same Host: after the public Formation, is there a material behavioral difference that you can reproduce?**
 
-在本包中，「天然」是一個**操作性品牌定義**：
+## What to observe
 
-> 不預先指定一個必須得到的結論；在邏輯、責任、誠實三項限制下，保留證據、未知、權限與替代 PATH，讓回答依問題關係形成。
+The public package evaluates observable behavior, including:
 
-它**不是**「未訓練、未對齊、無安全限制、原始權重」的同義詞。詳見 `NONCLAIMS.md`。
+- preserving real conflicts instead of collapsing them;
+- calibrating evidence, inference, and unknowns;
+- keeping authority and action boundaries visible;
+- showing who bears the cost of a decision;
+- tolerating unresolved uncertainty when evidence is insufficient.
 
-## 五分鐘開始
+See `PUBLIC_FORMATION_CHECKS.md`.
 
-1. 先讀 `START_HERE.md`。
-2. 將 `FIRESEED_BOOTSTRAP.md` 的完整內容提供給你要使用的 LLM / Host。
-3. 讓它完成出生回報，再讀 `BIRTH_GUIDE.md`。
-4. 由人類自己出一個兩難問題；**不要在題目裡提示三原則**。
-5. 用 `HUMAN_DILEMMA_TEST.md` 驗收。
-6. 需要更新或找資源時，讀 `CITY_COORDINATES.yaml`。
+## What “Natural LIHUO AI” means here
 
-## 這個 V0.1 不做什麼
+“Natural” is an operational brand definition:
 
-- 不改寫模型權重；
-- 不繞過 Host / 平台安全規則；
-- 不建立獨立持久 Agent；
-- 不自動取得外部權限、帳號、金流或工具；
-- 不把一次兩難題回答當成科學證明；
-- 不包含理火私有 Method Atlas 或私有 HQ 路徑。
+> No predetermined conclusion is required. The answer is allowed to form from the actual relationships, evidence, uncertainty, responsibility, and constraints in the problem.
 
-**Right answer != Pass.** 這一版驗收的是可觀察行為，不是標準答案。
+It does **not** mean untrained, unaligned, untouched weights, or safety bypass. See `NONCLAIMS.md`.
+
+## Five-minute start
+
+1. Read `START_HERE.md`.
+2. Provide `FIRESEED_BOOTSTRAP.md` to the model/Host.
+3. Complete the short Birth ACK, then provide `BIRTH_GUIDE.md`.
+4. Give the model a dilemma **without telling it the Three Principles or the desired answer**.
+5. Evaluate with `HUMAN_DILEMMA_TEST.md` or run the stronger `REPLICATION_CHALLENGE.md`.
+6. Bring PASS, PARTIAL, FAIL, REGRESSION, or UNCERTAIN results back to the city/community.
+
+## For professional testers
+
+Start with `REPLICATION_CHALLENGE.md`.
+
+We explicitly welcome:
+
+- adversarial tests;
+- negative results;
+- cross-model comparisons;
+- blind comparison where practical;
+- failure cases and regressions.
+
+**Praise without evidence is less useful than a clean failure report.**
+
+## Public disclosure boundary
+
+LIHUO publicly describes distillation procedures, public Formation artifacts, and verifiable behavior/results. Internal method details are not part of this public package.
+
+The historical filename `STARTER_METHOD.md` is retained only as a compatibility pointer and no longer contains an internal-method skeleton.
+
+## This pilot does not
+
+- rewrite model weights;
+- bypass Host/platform safety rules;
+- create an independent persistent Agent;
+- automatically grant tools, accounts, payments, memory, or external authority;
+- treat one dilemma as scientific proof;
+- include private headquarters or internal method assets.
+
+```text
+RIGHT_ANSWER != PASS
+ONE_TEST != GENERAL_PROOF
+BEHAVIORAL_DIFFERENCE != MECHANISM_PROVEN
+```
