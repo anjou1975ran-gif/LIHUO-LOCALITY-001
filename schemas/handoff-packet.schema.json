@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/anjou1975ran-gif/LIHUO-LOCALITY-001/schemas/handoff-packet.schema.json",
+  "title": "LIHUO Interdepartment Handoff Packet",
+  "type": "object",
+  "required": [
+    "packet_id",
+    "from_department",
+    "to_department",
+    "mandate_ref",
+    "task",
+    "source_refs",
+    "known_facts",
+    "assumptions",
+    "holds",
+    "authority_scope",
+    "privacy_class",
+    "requested_output",
+    "return_route",
+    "status"
+  ],
+  "properties": {
+    "packet_id": {"type": "string", "minLength": 1},
+    "from_department": {"type": "string", "minLength": 1},
+    "to_department": {"type": "string", "minLength": 1},
+    "mandate_ref": {"type": "string", "minLength": 1},
+    "task": {"type": "string", "minLength": 1},
+    "source_refs": {"type": "array", "items": {"type": "string"}},
+    "known_facts": {"type": "array", "items": {"type": "string"}},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "holds": {"type": "array", "items": {"type": "string"}},
+    "authority_scope": {"type": "string", "minLength": 1},
+    "privacy_class": {"type": "string", "minLength": 1},
+    "requested_output": {"type": "string", "minLength": 1},
+    "return_route": {"type": "string", "minLength": 1},
+    "status": {"enum": ["DRAFT", "READY_FOR_REVIEW", "ACCEPTED", "REJECTED", "COMPLETED"]}
+  },
+  "additionalProperties": true
+}
