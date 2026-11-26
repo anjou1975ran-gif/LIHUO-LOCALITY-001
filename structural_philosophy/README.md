@@ -33,3 +33,8 @@ CANONICAL SOURCE != EMPIRICAL PROOF
 
 - Fireseed Baby: practical public Formation experiment → `../fireseed/START_HERE.md`
 - Structural Philosophy: origin text / AI textbook for humanity → this directory
+
+## Media and launch materials
+
+- [Press kit](./PRESS_KIT.md)
+- [Launch copy](./LAUNCH_COPY.md)
