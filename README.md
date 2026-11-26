@@ -49,25 +49,26 @@ python -m unittest discover -s tests -v
 
 ## 🔥 Fireseed public pilot｜領一隻「天然的」理火火種寶寶
 
-The first public **LIHUO FIRESEED BABY V0.1** now lives in `fireseed/`.
+The public **LIHUO FIRESEED BABY V0.1.1** now lives in `fireseed/`.
 
 The pilot is intentionally small and Host-agnostic:
 
 - public Formation bootstrap;
 - birth guide;
-- public-safe Starter Method;
+- public Formation checks (observable behavior, not an internal-method specification);
 - Fireseed A2A city/resource profile;
 - Human Dilemma Test — the human writes the dilemma and does **not** prompt the Three Principles;
+- Independent Replication Challenge — same model/Host, fresh-context baseline vs Fireseed, failures welcome;
 - Git mother-city coordinates;
 - downloadable ZIP + SHA-256 checksum.
 
 Start at: `fireseed/START_HERE.md`
 
-Downloadable package: `fireseed/dist/LIHUO_FIRESEED_BABY_V0.1.zip`
+Downloadable package: `fireseed/dist/LIHUO_FIRESEED_BABY_V0.1.1.zip` (the V0.1 path is retained as a compatibility copy of the safe current package).
 
 “Natural LIHUO AI / 天然理火 AI” is an operational brand definition in this pilot. It does **not** mean an untrained, unaligned, untouched-weight or safety-bypassed base model. See `fireseed/NONCLAIMS.md`.
 
-The Fireseed pilot is a visible-behavior experiment, not proof of weight training, permanent identity, independent Agent runtime, or scientific generalization.
+The Fireseed pilot is a visible-behavior experiment, not proof of weight training, permanent identity, independent Agent runtime, or scientific generalization. Professional testers are explicitly invited to publish failures, regressions, and counterexamples.
 
 ## New LIHUO AI base connection
 
