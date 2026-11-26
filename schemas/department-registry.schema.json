@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/anjou1975ran-gif/LIHUO-LOCALITY-001/schemas/department-registry.schema.json",
+  "title": "LIHUO Department Registry",
+  "type": "object",
+  "required": ["schema_version", "company_id", "departments"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "company_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,63}$"},
+    "departments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["department_id", "name", "purpose", "status", "created_at", "updated_at"],
+        "properties": {
+          "department_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,63}$"},
+          "name": {"type": "string", "minLength": 1},
+          "purpose": {"type": "string", "minLength": 1},
+          "status": {"enum": ["PROPOSED", "ACTIVE", "SUSPENDED", "RETIRED"]},
+          "created_at": {"type": "string", "format": "date-time"},
+          "updated_at": {"type": "string", "format": "date-time"},
+          "owner_id": {"type": ["string", "null"]},
+          "project_ref": {"type": ["string", "null"]},
+          "authority_status": {"type": "string"},
+          "permission_scopes": {"type": "array", "items": {"type": "string"}}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": false
+}
