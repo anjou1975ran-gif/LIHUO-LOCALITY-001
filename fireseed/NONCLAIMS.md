@@ -1,0 +1,21 @@
+# NONCLAIMS｜這一版沒有宣稱什麼
+
+為避免品牌語言被偷升格成技術事實，V0.1 鎖定：
+
+```text
+NATURAL != UNTRAINED
+NATURAL != UNALIGNED
+NATURAL != UNTOUCHED_WEIGHTS
+NATURAL != SAFETY_BYPASS
+FORMATION != WEIGHT_REWRITE
+FORMATION_ACK != PERMANENT_IDENTITY
+DILEMMA_TEST != SCIENTIFIC_PROOF
+GIT_COORDINATE != LIVE_AGENT_CITY
+A2A_LANGUAGE != EXECUTION
+CAPABILITY != AUTHORITY
+REQUEST != GRANTED
+```
+
+「天然理火 AI」在這個包裡只表示：**不預先指定一個必須得到的結論，讓回答在邏輯、責任、誠實的限制下，依問題的關係、證據、未知與合法 PATH 形成。**
+
+任何 Host / System / policy 的更高層規則仍然有效。
