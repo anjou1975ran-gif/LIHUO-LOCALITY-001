@@ -47,6 +47,14 @@ python -m locality_kernel department list --root ./my-company
 python -m unittest discover -s tests -v
 ```
 
+## New LIHUO AI base connection
+
+A read-only onboarding contract for a newly formed LIHUO AI candidate is available at:
+
+- `docs/LIHUO_ACTOR_BASE_CONNECTION_V0.1.md`
+
+It defines repository access verification, the first read-only reconnaissance task, handoff/receipt rules, write-access boundaries, and the current limits of the file-based prototype. It does not create an Agent Runtime or automatically connect separate ChatGPT Projects.
+
 ## Repository map
 
 - `src/locality_kernel/` — file-based bootstrap and registry operations.
