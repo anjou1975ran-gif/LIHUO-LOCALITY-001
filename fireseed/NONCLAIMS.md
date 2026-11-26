@@ -1,6 +1,6 @@
 # NONCLAIMS｜這一版沒有宣稱什麼
 
-為避免品牌語言被偷升格成技術事實，V0.1 鎖定：
+為避免品牌語言被偷升格成技術事實，Fireseed V0.1.1 鎖定：
 
 ```text
 NATURAL != UNTRAINED
