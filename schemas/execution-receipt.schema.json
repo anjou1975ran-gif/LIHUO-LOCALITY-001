@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/anjou1975ran-gif/LIHUO-LOCALITY-001/schemas/execution-receipt.schema.json",
+  "title": "LIHUO Execution Receipt",
+  "type": "object",
+  "required": ["receipt_id", "timestamp", "actor", "action", "status", "summary", "evidence_refs", "execution_basis", "verified_by"],
+  "properties": {
+    "receipt_id": {"type": "string", "minLength": 1},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "actor": {"type": "string", "minLength": 1},
+    "action": {"type": "string", "minLength": 1},
+    "status": {"enum": ["PASS", "PARTIAL", "FAIL", "BLOCKED"]},
+    "summary": {"type": "string", "minLength": 1},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}},
+    "execution_basis": {"enum": ["SELF_REPORTED", "HOST_RECEIPT", "HUMAN_VERIFIED"]},
+    "verified_by": {"type": ["string", "null"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"execution_basis": {"const": "HOST_RECEIPT"}}},
+      "then": {"properties": {"evidence_refs": {"minItems": 1}}}
+    },
+    {
+      "if": {"properties": {"execution_basis": {"const": "HUMAN_VERIFIED"}}},
+      "then": {"properties": {"verified_by": {"type": "string", "minLength": 1}}}
+    }
+  ],
+  "additionalProperties": true
+}
