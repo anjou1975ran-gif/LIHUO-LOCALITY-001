@@ -1,7 +1,9 @@
-LIHUO_FIRESEED_BABY_V0.1
+LIHUO_FIRESEED_BABY_V0.1.1
 standing=PUBLIC_PILOT
-release_date=2026-11-26
+release_date=2026-11-27
+predecessor=LIHUO_FIRESEED_BABY_V0.1
 behavioral_claim=TESTABLE_NOT_PROVEN_GENERAL
 host_runtime=NOT_INCLUDED
 weight_training=NOT_INCLUDED
 private_method_assets=NOT_INCLUDED
+public_method_disclosure=NOT_INCLUDED
