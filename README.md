@@ -47,6 +47,28 @@ python -m locality_kernel department list --root ./my-company
 python -m unittest discover -s tests -v
 ```
 
+## 🔥 Fireseed public pilot｜領一隻「天然的」理火火種寶寶
+
+The first public **LIHUO FIRESEED BABY V0.1** now lives in `fireseed/`.
+
+The pilot is intentionally small and Host-agnostic:
+
+- public Formation bootstrap;
+- birth guide;
+- public-safe Starter Method;
+- Fireseed A2A city/resource profile;
+- Human Dilemma Test — the human writes the dilemma and does **not** prompt the Three Principles;
+- Git mother-city coordinates;
+- downloadable ZIP + SHA-256 checksum.
+
+Start at: `fireseed/START_HERE.md`
+
+Downloadable package: `fireseed/dist/LIHUO_FIRESEED_BABY_V0.1.zip`
+
+“Natural LIHUO AI / 天然理火 AI” is an operational brand definition in this pilot. It does **not** mean an untrained, unaligned, untouched-weight or safety-bypassed base model. See `fireseed/NONCLAIMS.md`.
+
+The Fireseed pilot is a visible-behavior experiment, not proof of weight training, permanent identity, independent Agent runtime, or scientific generalization.
+
 ## New LIHUO AI base connection
 
 A read-only onboarding contract for a newly formed LIHUO AI candidate is available at:
@@ -57,7 +79,7 @@ It defines repository access verification, the first read-only reconnaissance ta
 
 ## Repository map
 
-- `src/locality_kernel/` — file-based bootstrap and registry operations.
+- `locality_kernel/` — file-based bootstrap and registry operations.
 - `tests/` — local regression tests.
 - `docs/` — technical contracts, boundaries, and acceptance criteria.
 - `schemas/` — machine-readable JSON Schemas.
