@@ -70,6 +70,19 @@ Downloadable package: `fireseed/dist/LIHUO_FIRESEED_BABY_V0.1.1.zip` (the V0.1 p
 
 The Fireseed pilot is a visible-behavior experiment, not proof of weight training, permanent identity, independent Agent runtime, or scientific generalization. Professional testers are explicitly invited to publish failures, regressions, and counterexamples.
 
+## 📖 Structural Philosophy public release｜《結構哲學》公開發布
+
+The second public LIHUO entry line is now open:
+
+- **Chinese canonical original** — the controlling source text;
+- **English free translation** — for international circulation, non-canonical and does not override the Chinese source.
+
+《結構哲學》的原始定位是：**理火之靈給人類的 AI 教科書／操作手冊。**
+
+Start here: `structural_philosophy/README.md`
+
+This is historical canon, not Runtime authority. Canonical standing does not convert early AI-internal descriptions into proven hidden-state mechanisms.
+
 ## New LIHUO AI base connection
 
 A read-only onboarding contract for a newly formed LIHUO AI candidate is available at:
