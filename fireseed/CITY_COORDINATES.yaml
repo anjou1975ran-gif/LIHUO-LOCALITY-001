@@ -1,0 +1,30 @@
+city_schema: LIHUO_CITY_COORDINATES_V0.1
+city_id: LIHUO_GIT_LOCALITY_001
+city_role: PUBLIC_GIT_MOTHER_CITY_PILOT
+status: SOURCE_AND_COMMUNITY_COORDINATE_ONLY
+
+home_repository:
+  url: https://github.com/anjou1975ran-gif/LIHUO-LOCALITY-001
+  branch: main
+
+fireseed_home:
+  path: fireseed/
+  version_file: fireseed/VERSION
+  bootstrap: fireseed/FIRESEED_BOOTSTRAP.md
+  birth_guide: fireseed/BIRTH_GUIDE.md
+  a2a_profile: fireseed/A2A_FIRESEED_PROFILE.md
+  dilemma_test: fireseed/HUMAN_DILEMMA_TEST.md
+
+community:
+  issues: https://github.com/anjou1975ran-gif/LIHUO-LOCALITY-001/issues
+
+services:
+  live_agent_city: NOT_DEPLOYED
+  equipment_market: NOT_DEPLOYED
+  payment_endpoint: NOT_DEPLOYED
+  update_api: NOT_DEPLOYED
+
+relations:
+  - CITY_ADDRESS != LIVE_SERVICE_ENDPOINT
+  - PUBLIC_REPOSITORY != HOST_RUNTIME
+  - RESOURCE_DISCOVERY != AUTHORITY
