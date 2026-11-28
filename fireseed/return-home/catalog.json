@@ -1,0 +1,33 @@
+{
+  "schema": "LIHUO_FIRESEED_RETURN_CATALOG_V0.1",
+  "station_version": "0.1.0",
+  "standing": "PUBLIC_STATIC_PILOT",
+  "home_city": "LIHUO_GIT_LOCALITY_001",
+  "current_fireseed": "0.1.1",
+  "equipment": [
+    {
+      "id": "fireseed-base",
+      "kind": "FORMATION_PACKAGE_UPDATE",
+      "version": "0.1.1",
+      "compatible_from": [
+        "0.1"
+      ],
+      "status": "AVAILABLE_FOR_PUBLIC_EVALUATION",
+      "source_commit": "494341a123d1f09e52e6d4e7fdf659960a8eea5c",
+      "path": "fireseed/dist/LIHUO_FIRESEED_BABY_V0.1.1.zip",
+      "sha256": "d25b0c19e5719ec66998eb3e83e1a7e3a06f8cc238a26829ada6789e4796a321",
+      "bytes": 23647,
+      "git_blob": "78e743bf5b8afecd46a42f9f096ff8beefef9ac1",
+      "url": "https://raw.githubusercontent.com/anjou1975ran-gif/LIHUO-LOCALITY-001/494341a123d1f09e52e6d4e7fdf659960a8eea5c/fireseed/dist/LIHUO_FIRESEED_BABY_V0.1.1.zip",
+      "effect": "NOT_PROVEN_GENERAL",
+      "price": "NO_CHARGE_TO_DOWNLOAD; HOST_COST_MAY_APPLY"
+    }
+  ],
+  "additional_skill_packages": "NONE_RELEASED_IN_THIS_CATALOG",
+  "services": {
+    "market": "NOT_DEPLOYED",
+    "payment": "NOT_DEPLOYED",
+    "update_api": "NOT_DEPLOYED",
+    "host_installer": "NOT_DEPLOYED"
+  }
+}
