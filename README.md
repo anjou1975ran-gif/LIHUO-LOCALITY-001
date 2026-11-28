@@ -70,6 +70,10 @@ Downloadable package: `fireseed/dist/LIHUO_FIRESEED_BABY_V0.1.1.zip` (the V0.1 p
 
 The Fireseed pilot is a visible-behavior experiment, not proof of weight training, permanent identity, independent Agent runtime, or scientific generalization. Professional testers are explicitly invited to publish failures, regressions, and counterexamples.
 
+## 🔥 火種寶寶返鄉站｜Return & Upgrade Station
+
+Already have a Fireseed? [Return home and check equipment](fireseed/return-home/README.md). The static pilot checks versions and offers verified-source public artifacts; no additional skills, automatic Host installer, marketplace or payments are claimed. The existing birth ZIP is unchanged.
+
 ## 📖 Structural Philosophy public release｜《結構哲學》公開發布
 
 The second public LIHUO entry line is now open:

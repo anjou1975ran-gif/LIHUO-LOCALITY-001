@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {plan} from './planner.mjs';
+const c=JSON.parse(await readFile(new URL('./catalog.json',import.meta.url),'utf8'));
+test('known prior version has an update',()=>assert.equal(plan(c,'V0.1').status,'UPDATE_AVAILABLE'));
+test('current version does not imply install',()=>{const p=plan(c,'0.1.1');assert.equal(p.status,'CURRENT_REPORTED');assert.equal(p.host_installation,'NOT_VERIFIED');});
+test('unknown or newer version holds',()=>{for(const v of [null,'0.2','invalid'])assert.equal(plan(c,v).status,'HOLD_UNKNOWN_VERSION');});
+test('missing release holds',()=>assert.equal(plan({...c,equipment:[]},'0.1').status,'HOLD_NO_COMPATIBLE_RELEASE'));
+test('no private or unreleased skills',()=>assert.deepEqual(plan(c,'0.1').available_additional_skills,[]));
+test('catalog digest and size match existing release bytes',async()=>{const item=c.equipment[0];const data=await readFile(new URL('../dist/LIHUO_FIRESEED_BABY_V0.1.1.zip',import.meta.url));assert.equal(data.length,item.bytes);assert.equal(createHash('sha256').update(data).digest('hex'),item.sha256);});
