@@ -15,3 +15,5 @@ jobs:
         with:
           node-version: '20'
       - run: node --test fireseed/return-home/station.test.mjs
+        env:
+          FIRESEED_LIVE_TEST: '1'
